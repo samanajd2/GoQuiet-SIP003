@@ -24,23 +24,6 @@ gq-client requires go1.11+. gq-server doesn't require any particularly new versi
 
 `make client` or `make server`
 
-
-Or manually:
-
--For Linux:
-
-`env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -buildvcs=false -ldflags="-s -w" -o ./bin/gq-client_linux_amd64 ./cmd/gq-client`
-
-`env CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -buildvcs=false -ldflags="-s -w" -o ./bin/gq-server_linux_386 ./cmd/gq-server`
-
-
--For windows:
-
-`env CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -buildvcs=false -ldflags="-s -w" -o ./bin/gq-client_windows_amd64.exe ./cmd/gq-client`
-
-`env CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -buildvcs=false -ldflags="-s -w" -o ./bin/gq-server_windows_386.exe ./cmd/gq-server`
-
-
 or use the automated script [here](https://gist.github.com/cbeuw/327173c0825a3f76679d063135cc29df) to build shadowsocks-libev and GoQuiet server from source.
 
 ## Usage
